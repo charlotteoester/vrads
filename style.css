@@ -1,0 +1,124 @@
+/* Fonts */
+@font-face {
+    font-family: crimson-reg;
+    src: url('fonts/CrimsonText-Regular.ttf');
+}
+
+@font-face {
+    font-family: crimson-ita;
+    src: url('fonts/CrimsonText-Italic.ttf');
+}
+
+@font-face {
+    font-family: qua-reg;
+    src: url('fonts/QuattrocentoSans-Regular.ttf');
+}
+
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* Body */
+body {
+    background-color: #EDE8DA;
+}
+
+/* Navigationsbaren */
+nav {
+    background-color: #E4DECD;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 75px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #172E4D;
+    font-family: qua-reg;
+}
+
+nav a:hover {
+    background-color: aqua;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #E4DECD;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+.logo {
+    height: 75%;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries - responsiv */
+@media(max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+

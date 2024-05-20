@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">defer</script>
+    <title>Document</title>
+</head>
+<body>
+    <!--Navigationsbaren-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Reservér bord</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Begivenheder</a></li>
+            <li><a href="#">Historien bag</a></li>
+            <li><a href="#">Veterantoget</a></li>
+            <li><a href="#">Selskaber</a></li>
+            <li><a href="#">Kontakt</a></li> 
+        </ul>
+        <ul>
+        <li><a href="#"><img src="billeder/vrads logo2.svg" alt="" class="logo"></a></li>
+        <li class="hideOnMobile"><a href="#">Reservér bord</a></li>
+        <li class="hideOnMobile"><a href="#">Menu</a></li>
+        <li class="hideOnMobile"><a href="#">Begivenheder</a></li>
+        <li class="hideOnMobile"><a href="#">Historien bag</a></li>
+        <li class="hideOnMobile"><a href="#">Veterantoget</a></li>
+        <li class="hideOnMobile"><a href="#">Selskaber</a></li>
+        <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
