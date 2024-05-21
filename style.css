@@ -14,6 +14,9 @@
     src: url('fonts/QuattrocentoSans-Regular.ttf');
 }
 
+
+
+
 h1 {
     font-size: 2.3rem;
     font-weight: 400;
@@ -229,12 +232,16 @@ nav li:first-child{
 
 
 
-#change_language {
+.change_language {
     font-family: crimson-reg;
     font-size: 12px;
     font-weight: bold;
 }
 
-#change_language:hover {
+.change_language:hover {
     text-decoration: none;
+}
+
+.bold_text {
+    font-family: qua-bold;
 }
