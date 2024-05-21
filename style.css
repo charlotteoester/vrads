@@ -226,23 +226,3 @@ nav li:first-child{
 
 
 
-
-
-
-
-
-
-
-.change_language {
-    font-family: crimson-reg;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.change_language:hover {
-    text-decoration: none;
-}
-
-.bold_text {
-    font-family: qua-bold;
-}
