@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family: crimson-bold;
-    src: url('fonts/CrimsonText-Bold.ttf');
+    font-family: crimson-semibold;
+    src: url('fonts/CrimsonText-SemiBold.ttf');
 }
 
 @font-face {
@@ -22,6 +22,11 @@
 @font-face {
     font-family: qua-bold;
     src: url('fonts/QuattrocentoSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: crimson-ita;
+    src: url('fonts/CrimsonText-Italic.ttf');
 }
 
 
@@ -35,7 +40,7 @@
     text-decoration: none;
 }
 
-.bold {
+.qua-bold {
     font-family: qua-bold;
 }
 
@@ -45,6 +50,35 @@
     align-items: center;
     flex-direction: column;
     text-align: left;
+}
+
+/********************************************************************************************************************************/
+/************************************************* Styleregler for footer  ******************************************************/
+/********************************************************************************************************************************/
+
+
+footer {
+    padding: 6% 6% 6% 6%;
+    background-color: #E4DECD;
+    display: flex; /* Bruger flexbox */
+    justify-content: space-between; /* Placerer elementerne med lige mellemrum */
+    flex-direction: column;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mærkater {
+    display: flex;
+    align-items: center; /* Centrerer øko-mærkater og sociale medier vertikalt */
+}
+
+.align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
 }
 
 
