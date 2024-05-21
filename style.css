@@ -14,8 +14,10 @@
     src: url('fonts/QuattrocentoSans-Regular.ttf');
 }
 
-
-
+@font-face {
+    font-family: qua-bold;
+    src: url('fonts/QuattrocentoSans-Bold.ttf');
+}
 
 h1 {
     font-size: 2.3rem;
