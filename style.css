@@ -35,6 +35,7 @@ h2 {
 
 p {
     font-size: 20px;
+    line-height: 135%;
     font-family: qua-reg;
 }
 
@@ -167,17 +168,19 @@ nav li:first-child{
     text-align: center;
     background-color: #62758A;
     color: white;
-    font-family: qua-reg;
     --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
     -webkit-mask: var(--mask);
             mask: var(--mask);
     margin-top: 64px;
 }
 
-.velkommen_wrapper {
+/* Velkomst sektion + Natur sektion på forsiden */
+
+.velkommen_wrapper, .natur_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 96px;
     gap: 96px;
 }
@@ -189,9 +192,11 @@ nav li:first-child{
     padding-bottom: 56px;
 }
 
+.kalender_wrapper .linje {
+    width: 50%;
+}
+
 /* Åbningstider */
-
-
 
 .aabning_wrapper {
     position: relative;
@@ -204,22 +209,16 @@ nav li:first-child{
     align-items: center;
 }
 
-.aabning_text {
+.aabning_text p {
     color: white;
+    font-family: crimson-reg;
 }
 
-/* Natur sektion på forsiden */
-
-.natur_wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 96px;
-    gap: 96px;
+.bold {
+    font-family: qua-bold;
 }
 
 /* Kalender sektion på forsiden */
-
 
 .kalender_wrapper {
     position: relative;
@@ -227,11 +226,30 @@ nav li:first-child{
     color: white;
     background-image: url(img/kalenderen.svg);
     height: 750px;
-    display: flex;
-    justify-content: center;
     padding: 96px;
-    
 }
+
+.kalender_wrapper_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+.kalender_wrapper_content .knap {
+    background-color: #E4DECD;
+    color: #172E4D;
+}
+
+.kalender_wrapper_content .knap:hover {
+    background-color: #EEDFB6;
+    font-family: qua-bold;
+}
+
+
+
+
 
 
 
