@@ -162,7 +162,7 @@ nav li:first-child{
     text-align: center;
 }
 
-/* Velkommen til på forsiden */
+/* knapper */
 
 .knap {
     width: 150px;
@@ -177,6 +177,10 @@ nav li:first-child{
     -webkit-mask: var(--mask);
             mask: var(--mask);
     margin-top: 64px;
+}
+
+.knap:hover {
+    background-color: #172E4D;
 }
 
 /* Velkomst sektion + Natur sektion på forsiden */
