@@ -25,6 +25,8 @@ body {
     background-color: #EDE8DA;
 }
 
+/*----------------------------------- FORSIDE ----------------------------------- */
+
 /* Navigationsbaren */
 nav {
     background-color: #E4DECD;
@@ -91,6 +93,12 @@ nav li:first-child{
     width: auto;
 }
 
+/* Video */
+
+.video {
+    width: 100%;
+    height: auto;
+}
 
 
 
@@ -105,8 +113,8 @@ nav li:first-child{
 
 
 
-
-/* Media queries - responsiv */
+/* ----------------------------------- Media queries - responsiv ----------------------------------- */
+/*  Navigationsbaren */
 @media(max-width: 800px) {
     .hideOnMobile{
         display: none;
