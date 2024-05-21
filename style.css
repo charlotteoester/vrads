@@ -47,7 +47,6 @@ p {
     color: #172E4D;
 }
 
-
 /* Body */
 body {
     background-color: #EDE8DA;
@@ -209,15 +208,6 @@ nav li:first-child{
     align-items: center;
 }
 
-.aabning_text p {
-    color: white;
-    font-family: crimson-reg;
-}
-
-.bold {
-    font-family: qua-bold;
-}
-
 /* Kalender sektion på forsiden */
 
 .kalender_wrapper {
@@ -296,6 +286,74 @@ nav li:first-child{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------- Media queries - responsiv ----------------------------------- */
 /*  Navigationsbaren */
 @media(max-width: 800px) {
@@ -312,6 +370,104 @@ nav li:first-child{
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_wrapper {
+    padding: 6% 6% 6% 6%;
+    background-color: #E4DECD;
+    display: flex; /* Bruger flexbox */
+    justify-content: space-between; /* Placerer elementerne med lige mellemrum */
+    flex-direction: row;
+}
+
+.footer_wrapper p {
+    font-family: crimson-reg;
+}
+
+
+.qua-bold {
+    font-family: qua-bold;
+}
+
+.crimson-semibold {
+    font-family: crimson-semibold;
+}
+
+.crimson-ita {
+    font-family: crimson-ita;
+}
+
+
+.aabning_text p {
+    color: white;
+    font-family: crimson-reg;
+}
+
+
+a {
+    color: #172E4D
+}
+
+@font-face {
+    font-family: crimson-semibold;
+    src: url('fonts/CrimsonText-SemiBold.ttf');
+}
+
+
+.tekst_layout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

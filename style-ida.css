@@ -44,7 +44,6 @@
     font-family: qua-bold;
 }
 
-
 .tekst_layout {
     display: flex;
     align-items: center;
@@ -57,28 +56,5 @@
 /********************************************************************************************************************************/
 
 
-footer {
-    padding: 6% 6% 6% 6%;
-    background-color: #E4DECD;
-    display: flex; /* Bruger flexbox */
-    justify-content: space-between; /* Placerer elementerne med lige mellemrum */
-    flex-direction: column;
-}
-
-.footer_container {
-    display: flex;
-    flex-direction: column;
-}
-
-.mærkater {
-    display: flex;
-    align-items: center; /* Centrerer øko-mærkater og sociale medier vertikalt */
-}
-
-.align {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-}
 
 
