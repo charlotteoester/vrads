@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: crimson-bold;
+    src: url('fonts/CrimsonText-Bold.ttf');
+}
+
+@font-face {
     font-family: crimson-ita;
     src: url('fonts/CrimsonText-Italic.ttf');
 }
@@ -275,6 +280,77 @@ nav li:first-child{
     z-index: 999;
 }
 
+/*----------------------------------- MENUKORT - FROKOSTMENU ----------------------------------- */
+
+/* Billedkarrusel */
+
+.wrapperwrapper {
+    display: flex;
+    justify-content: right;
+    padding-top: 40px;
+
+    background-color: #EDE8DA;
+}
+
+.menu_wrapper {
+    max-width: 1300px;
+    position: relative;
+}
+
+.menu_wrapper .menu_carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu_carousel img {
+    height: 375px;
+    object-fit: cover;
+   padding-right: 30px;
+    width: calc(100% / 4);
+}
+
+.menu_carousel:first-child {
+    margin-left: 0px;
+}
+
+/* Menuknapper */
+
+
+.menu_knapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 64px;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.menukort_layout div {
+    position: relative;
+    text-align: center;
+}
+
+
+.menulinje_stor {
+    width: 42%;
+    height: auto;
+    padding-top: 24px;
+    padding-bottom: 64px;
+}
+
+.menulinje_lille {
+    width: 10%;
+    height: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.menu_bold {
+    font-family: crimson-bold;
+}
 
 
 
@@ -296,7 +372,8 @@ nav li:first-child{
 
 
 
-/* ----------------------------------- Media queries - responsiv ----------------------------------- */
+
+/* ----------------------------------- MEDIA QUERIES ----------------------------------- */
 /*  Navigationsbaren */
 @media(max-width: 800px) {
     .hideOnMobile{
