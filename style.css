@@ -145,7 +145,7 @@ nav li:first-child{
     text-align: center;
 }
 
-/* Velkommen til */
+/* Velkommen til på forsiden */
 
 .knap {
     width: 150px;
@@ -175,6 +175,38 @@ nav li:first-child{
     padding-top: 24px;
     padding-bottom: 56px;
 }
+
+/* Åbningstider */
+
+.aabningstider {
+    width: 100%;
+}
+
+.aabning_wrapper {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url(img/aabningstider.svg);
+    height: 200px;
+}
+
+.aabning_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Natur sektion på forsiden */
+
+.natur_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 96px;
+    gap: 96px;
+}
+
 
 
 
