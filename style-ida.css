@@ -40,7 +40,7 @@
 }
 
 
-.tekst_side {
+.tekst_layout {
     display: flex;
     align-items: center;
     flex-direction: column;
