@@ -1,14 +1,43 @@
-.change_language {
+/* Fonts */
+@font-face {
     font-family: crimson-reg;
+    src: url('fonts/CrimsonText-Regular.ttf');
+}
+
+@font-face {
+    font-family: crimson-ita;
+    src: url('fonts/CrimsonText-Italic.ttf');
+}
+
+@font-face {
+    font-family: crimson-bold;
+    src: url('fonts/CrimsonText-Bold.ttf');
+}
+
+@font-face {
+    font-family: qua-reg;
+    src: url('fonts/QuattrocentoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: qua-bold;
+    src: url('fonts/QuattrocentoSans-Bold.ttf');
+}
+
+
+
+.change_language {
+    font-family: crimson-bold;
     font-size: 12px;
-    font-weight: bold;
 }
 
 .change_language:hover {
     text-decoration: none;
 }
 
-.bold_text {
+.bold_tekst {
     font-family: qua-bold;
 }
+
+
 
