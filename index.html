@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-ida.css"> <!-- HUSK AT FJERNE IGEN -->
     <link rel="stylesheet" href="reset.css">
     <script src="script.js">defer</script>
     <title>Document</title>
@@ -14,26 +15,27 @@
     <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">Reservér bord</a></li>
+            <li><a href="#" class="bold_tekst">Reservér bord</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Begivenheder</a></li>
             <li><a href="#">Historien bag</a></li>
             <li><a href="#">Veterantoget</a></li>
             <li><a href="#">Selskaber</a></li>
             <li><a href="#">Kontakt</a></li>
-            <li><a href="#" id="change_language">English</a></li> 
+            <li><a href="#" class="change_language">English</a></li> 
         </ul>
+        
         <ul>
-        <li><a href="#"><img src="img/vradslogo.svg" alt="" class="logo"></a></li>
-        <li class="hideOnMobile"><a href="#">Reservér bord</a></li>
-        <li class="hideOnMobile"><a href="#">Menu</a></li>
-        <li class="hideOnMobile"><a href="#">Begivenheder</a></li>
-        <li class="hideOnMobile"><a href="#">Historien bag</a></li>
-        <li class="hideOnMobile"><a href="#">Veterantoget</a></li>
-        <li class="hideOnMobile"><a href="#">Selskaber</a></li>
-        <li class="hideOnMobile"><a href="#">Kontakt</a></li>
-        <li><a href="#" id="change_language">English</a></li> 
-        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li><a href="#"><img src="img/vradslogo.svg" alt="" class="logo"></a></li>
+            <li class="hideOnMobile" class="bold_tekst"><a href="#">Reservér bord</a></li>
+            <li class="hideOnMobile"><a href="#">Menu</a></li>
+            <li class="hideOnMobile"><a href="#">Begivenheder</a></li>
+            <li class="hideOnMobile"><a href="#">Historien bag</a></li>
+            <li class="hideOnMobile"><a href="#">Veterantoget</a></li>
+            <li class="hideOnMobile"><a href="#">Selskaber</a></li>
+            <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+            <li class="hideOnMobile"><a href="#" class="change_language">English</a></li> 
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
 
@@ -52,10 +54,11 @@
 
     <!--Velkommen sektion på forsiden-->
     <div class="velkommen_wrapper">
-        <div>
+
+        <div class="tekst_side">
             <h2>Velkommen til</h2>
             <h1>RESTAURANT VRADS STATION</h1>
-            
+
             <img src="img/linje.svg" alt="" class="linje">
             
             <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna <br> <br>
@@ -69,6 +72,7 @@
                 <p>Se menuen</p>
             </div>
         </div>
+
         <div>
             <img src="img/ventesal.svg" alt="">
         </div>
@@ -103,7 +107,7 @@
                 <p>Reservér bord</p>
             </div>
         </div>
-    </div>
     
+    </div>
 </body>
 </html>

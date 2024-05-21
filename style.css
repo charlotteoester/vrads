@@ -39,6 +39,7 @@ h2 {
 /* Body */
 body {
     background-color: #EDE8DA;
+    font-family: qua-reg;
 }
 
 /*----------------------------------- FORSIDE ----------------------------------- */
@@ -156,9 +157,11 @@ nav li:first-child{
     text-align: center;
     background-color: #62758A;
     color: white;
+    font-family: qua-reg;
     --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
     -webkit-mask: var(--mask);
             mask: var(--mask);
+    margin-top: 64px;
 }
 
 .velkommen_wrapper {
@@ -255,23 +258,3 @@ nav li:first-child{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#change_language {
-    font-family: crimson-reg;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-#change_language:hover {
-    text-decoration: none;
-}
