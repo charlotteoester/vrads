@@ -8,6 +8,9 @@ function hideSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
 }
+// For at kode navigationsbaren, er denne video benyttet som hjælp
+https://www.youtube.com/watch?v=U8smiWQ8Seg
+//
 
 
 /* Billedkarrusel */
@@ -95,3 +98,30 @@ window.addEventListener('scroll', () => {
 
     circle.style.left = `${circlePosition}px`;
 });
+
+//kilde: chatGPT har hjulpet med at få cirklen til at bevæge sig horisontalt, når man scroller ned på siden
+
+
+
+
+
+
+
+
+
+
+
+
+//Animationer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');            
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

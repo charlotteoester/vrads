@@ -490,7 +490,6 @@ https://css-generators.com/custom-corners/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 50px;
     position: sticky;
 }
 
@@ -504,6 +503,17 @@ https://css-generators.com/custom-corners/
     margin-bottom: 24px;
     gap: 64px;
 }
+
+
+/* ----------------------------------- ANIMATIONER ----------------------------------- */
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+}
+
 
 
 
@@ -535,5 +545,12 @@ https://css-generators.com/custom-corners/
 @media(max-width: 400px) {
     .sidebar{
         width: 100%;
+    }
+}
+
+/*  Animation */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
     }
 }
