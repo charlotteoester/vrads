@@ -79,3 +79,19 @@ puls_buttons.forEach(function(btn) {
 });
 
 // Kilde: For at lave denne kode, brugte vi ChatGPT og ligeledes hjælp fra ChatGPT til at forklare det, vi ikke kunne gennemskue på egen hånd 
+
+
+
+
+//tidslinje
+window.addEventListener('scroll', () => {
+    const circle = document.querySelector('.circle');
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPosition = window.scrollY;
+    const maxPosition = window.innerWidth - circle.offsetWidth;
+
+    const scrollPercentage = scrollPosition / maxScroll;
+    const circlePosition = maxPosition * scrollPercentage;
+
+    circle.style.left = `${circlePosition}px`;
+});

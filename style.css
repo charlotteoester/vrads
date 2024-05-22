@@ -453,6 +453,64 @@ https://css-generators.com/custom-corners/
     width: 86%;
 }
 
+/* ----------------------------------- HISTORIEN BAG ----------------------------------- */
+
+.historien_img {
+    display: flex;
+    justify-content: center;
+}
+
+.historien_img img {
+    width: 86%;
+}
+
+.tidslinje {
+    top: 10%;
+    position: sticky;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.circle {
+    position: sticky;
+    top: 10%; /* Startposition: midt på skærmen */
+    margin-left: 27%;
+    margin-right: 27%;
+    width: 20px;
+    height: 20px;
+    background-color: #003366;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 999; /* Sørger for at cirklen ligger oven på andre elementer */
+}
+
+.tidslinje_tal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    position: sticky;
+}
+
+.spalter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    margin-left: 96px;
+    margin-right: 96px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    gap: 64px;
+}
+
+
+
+
+
+
+
 
 
 
