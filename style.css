@@ -29,6 +29,11 @@
     src: url('fonts/QuattrocentoSans-Bold.ttf');
 }
 
+@font-face {
+    font-family: qua-ita;
+    src: url('fonts/QuattrocentoSans-Italic.ttf');
+}
+
 h1 {
     font-size: 2.3rem;
     font-weight: 400;
@@ -41,6 +46,18 @@ h2 {
     font-weight: 400;
     font-family: crimson-reg;
     text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: crimson-reg;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: crimson-reg;
 }
 
 p {
@@ -61,6 +78,10 @@ p {
     font-family: qua-bold;
 }
 
+.qua-ita {
+    font-family: qua-ita;
+}
+
 .crimson-semibold {
     font-family: crimson-semibold;
 }
@@ -76,6 +97,12 @@ p {
 
 a {
     color: #172E4D
+}
+
+.centreret_text {
+    text-align: center;
+    font-family: qua-ita;
+    color: #172E4D;
 }
 
 
@@ -202,8 +229,12 @@ nav li:first-child{
     --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
     -webkit-mask: var(--mask);
             mask: var(--mask);
-    margin-top: 64px;
+    margin: 64px auto 0 auto; /* Top margin og auto for at centrere vandret */
 }
+/*
+Disse knapper er lavet ved hjælp af denne kilde
+https://css-generators.com/custom-corners/
+*/
 
 .knap:hover {
     background-color: #172E4D;
@@ -390,6 +421,36 @@ nav li:first-child{
 
 .menu_bold {
     font-family: crimson-bold;
+}
+
+/* ----------------------------------- BEGIVENHEDER ----------------------------------- */
+
+
+.centreret_overskrift {
+    margin-top: 64px;
+}
+
+.centreret_overskrift img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+    padding-top: 24px;
+}
+
+.begivenhed_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 96px;
+    gap: 96px;
+}
+
+.begivenhed_linje {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 86%;
 }
 
 

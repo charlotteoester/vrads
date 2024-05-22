@@ -12,31 +12,39 @@ function hideSidebar(){
 
 /* Billedkarrusel */
 
+// Vælg carousel-elementet fra DOM'en
 const carousel = document.querySelector(".menu_carousel");
 
-
+// Definer variabler til at spore drag status og positioner
 let isDragStart = false, prevPageX, prevScrollLeft;
 
+// Funktion til at starte drag
 const dragStart = (e) => {
-    isDragStart = true;
-    prevPageX = e.pageX;
-    prevScrollLeft = carousel.scrollLeft;
+    isDragStart = true; // Sæt drag status til true
+    prevPageX = e.pageX; // Gem den nuværende X-position af musen
+    prevScrollLeft = carousel.scrollLeft; // Gem den nuværende scroll position af carousel
 }
 
+// Funktion til at håndtere drag-bevægelsen
 const dragging = (e) => {
-    if(!isDragStart) return;
-    e.preventDefault();
-    let positionDiff = e.pageX - prevPageX;
-    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    if(!isDragStart) return; // Hvis drag ikke er startet, gør ingenting
+    e.preventDefault(); // Forhindre standard handlinger (som at markere tekst)
+    let positionDiff = e.pageX - prevPageX; // Beregn forskellen i X-positionen siden drag startede
+    carousel.scrollLeft = prevScrollLeft - positionDiff; // Opdater scroll positionen af carousel
 }
 
+// Funktion til at stoppe drag
 const dragStop = () => {
-    isDragStart = false;
+    isDragStart = false; // Sæt drag status til false
 }
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-carousel.addEventListener("mouseup", dragStop);
+// Tilføj event listeners til carousel elementet
+carousel.addEventListener("mousedown", dragStart); // Når musen trykkes ned, start drag
+carousel.addEventListener("mousemove", dragging); // Når musen bevæges, udfør dragging
+carousel.addEventListener("mouseup", dragStop); // Når musen slippes, stop drag
+
+// Kilde: denne kode er lavet ved hjælp af følgende video
+// https://www.youtube.com/watch?v=7HPsdVQhpRw&list=PLpwngcHZlPae68z_mLFNfbJFIJVJ_Zcx2&index=6
 
 
 
@@ -45,7 +53,7 @@ let activeButton = null;
 
 // VARIABLER
 // Henter alle knapper med class "hjerterytme-btn" og laver en fælles variabel kaldet puls_buttons
-const puls_buttons = document.querySelectorAll('.hjerterytme-btn'); 
+const puls_buttons = document.querySelectorAll('.knap'); 
 
 // Funktion til at håndtere knap klik
 function handleButtonClick(btn) {
@@ -59,7 +67,7 @@ function handleButtonClick(btn) {
 
     // Den knap, som klikkes på, får tilføjet "active" class
     btn.classList.add('active');
-    btn.style.backgroundColor = "#811F25"; // Når en knap er aktiv, dvs. har fået class "active", skal baggrundsfarven ændres fra gennemsigtig til en mørk rød
+    btn.style.backgroundColor = "#172E4D"; // Når en knap er aktiv, dvs. har fået class "active", skal baggrundsfarven ændres fra gennemsigtig til en mørk rød
     
 }
 

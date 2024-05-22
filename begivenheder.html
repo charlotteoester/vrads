@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-ida.css"> <!-- HUSK AT FJERNE IGEN -->
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Navigationsbaren -->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" class="bold">Reservér bord</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Begivenheder</a></li>
+            <li><a href="#">Historien bag</a></li>
+            <li><a href="#">Veterantoget</a></li>
+            <li><a href="#">Selskaber</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#" class="change_language">English</a></li> 
+        </ul>
+        
+        <ul>
+            <li><a href="#"><img src="img/vradslogo.svg" alt="" class="logo"></a></li>
+            <li class="hideOnMobile"><a href="#" class="bold">Reservér bord</a></li>
+            <li class="hideOnMobile"><a href="#">Menu</a></li>
+            <li class="hideOnMobile"><a href="#">Begivenheder</a></li>
+            <li class="hideOnMobile"><a href="#">Historien bag</a></li>
+            <li class="hideOnMobile"><a href="#">Veterantoget</a></li>
+            <li class="hideOnMobile"><a href="#">Selskaber</a></li>
+            <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+            <li class="hideOnMobile"><a href="#" class="change_language">English</a></li> 
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <!-- Begivenhed nummer 1 -->
+
+    <!-- Overskrift-->
+    <div class="centreret_overskrift">
+        <h1 class="blaa_tekst">BEGIVENHEDER</h1>
+        <img src="img/linje.svg" alt="">
+    </div>
+
+    <!-- Torsdagsmiddag-->
+    <section class="begivenhed_wrapper">
+        <div>
+            <img src="img/torsdagsmiddag.svg" alt="" class="begivenhed_img">
+        </div>
+        <div>
+            <h3 class="blaa_tekst">TORSDAGSMIDDAG</h3>
+            <h4 class="blaa_tekst">Tors. 06.06.2024 ankomst Kl. 17.00-18.00</h4>
+            <br> <br>
+            <p class="blaa_tekst">
+                Gør din torsdag til noget særligt med en middag i vores hyggelige og indbydende atmosfære,
+                hvor råvarerne er nøje udvalgte fra lokale og økologiske leverandører.
+                <br>
+                Når du træder indenfor vil du blive mødt af vores historiske og unikke interiør, som sætter rammerne for
+                en særlig og nærværende aften. Vores imødekommende personale vil vise dig til dit bord og sørge for,
+                 at du straks føler dig hjemme med en betjening i særklasse.
+                <br> <br>
+            </p>
+            <h2 class="blaa_tekst">Vi tilbyder:</h2>
+            <p class="centreret_text">
+                2 retters middag inkl. en lille øl/vand/glas vin <br>
+                Dansk bøf med løg og rabarberkage <br>
+                199,-
+                <br><br>
+                Nødvendigt at bestille bord
+            </p>
+            <!-- knap-->
+            <div class="knap">
+                <p>Reservér bord</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linje-->
+    <div>
+        <img src="img/gigalinje.svg" alt="" class="begivenhed_linje">
+    </div>
+
+    <!-- Jazzaften-->
+    <section class="begivenhed_wrapper">
+        <div>
+            <h3 class="blaa_tekst">JAZZAFTEN</h3>
+            <h4 class="blaa_tekst">Lør. 20.07.2024 Kl. 18.00-22.00</h4>
+            <br> <br>
+            <p class="blaa_tekst">
+                Vi tager forskud på glæderne inden Riverboat i Silkeborg og har booket den populære trio Blond Bass. 
+                Blonde Bass er tre skønne musikere, som både spiller bas og synger. De har et varieret repertoire, 
+                som giver en kombination af fylde, dybde og harmoni.
+                <br> <br>
+            </p>
+            <h2 class="blaa_tekst">Vi tilbyder:</h2>
+            <p class="centreret_text">
+                3 retters middag inkl. et glas bobler ved ankomst <br>
+                Hjemmerørt laksesalat med varmrøget laks,forårsløg, advokado og flødeost/serveres på salatbund med brød <br>
+                Bøf af oksefilet 200g serveret med pommes frits, grønt og sauce bearnaise <br>
+                Panna cotta med jordbær <br>
+                399,-
+                <br><br>
+                Vi anbefaler at bestille bord
+            </p>
+            <!-- knap-->
+            <div class="knap">
+                <p>Reservér bord</p>
+            </div>
+        </div>
+        <div>
+            <img src="img/jazzaften.svg" alt="" class="begivenhed_img">
+        </div>
+    </section>
+
+    <!-- Linje-->
+    <div>
+        <img src="img/gigalinje.svg" alt="" class="begivenhed_linje">
+    </div>
+
+    <!-- Veterandag-->
+    <section class="begivenhed_wrapper">
+        <div>
+            <img src="img/veterandag.svg" alt="" class="begivenhed_img">
+        </div>
+        <div>
+            <h3 class="blaa_tekst">VETERAN & HISTORIE DAG</h3>
+            <h4 class="blaa_tekst">Søn. 18.08.2024 KL. 11.00-14.00</h4>
+            <br> <br>
+            <p class="blaa_tekst">
+                Denne søndag får vi besøg af gamle biler og motorcykler, de bliver udstillet og enkelte giver en prøvetur. 
+                Der vil desuden kunne høres fortællinger og anekdoter fra  tiden, hvor Bryrupbanen og stationen blev bygget. 
+                Så ta' din mand/kone med og nyd nogle hyggelige timer i idylliske og historiske omgivelser.
+                <br> <br>
+            </p>
+            <h2 class="blaa_tekst">Vi tilbyder:</h2>
+            <p class="centreret_text">
+                Vi tilbyder:
+                Frokostbuffet inkl. en lille øl/vand/glas vin <br>
+                Laks - Æg/rejer - Tunmoussse/urtecreme <br>
+                Oksesteg - honningmarineret skinke - Flødekartofler - Skysauce - Lækker salat <br>
+                Sommerdrøm med hindbær <br>
+                268,-
+
+                <br><br>
+                Vi anbefaler at bestille bord
+            </p>
+            <!-- knap-->
+            <div class="knap">
+                <p>Reservér bord</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linje-->
+    <div>
+        <img src="img/gigalinje.svg" alt="" class="begivenhed_linje">
+    </div>
+
+    <!-- Candlelit dinner-->
+    <section class="begivenhed_wrapper">
+        <div>
+            <h3 class="blaa_tekst">CANDLELIT DINNER</h3>
+            <h4 class="blaa_tekst">Lør. 28.09.2024 KL. 18.00-21.00</h4>
+            <br> <br>
+            <p class="blaa_tekst">
+                I stearinlysets skær sørger vi for en nærværende og romantisk aften sammen med dem, du holder af. 
+                Der vil være afdæmpet baggrundsmusik med smukt dækkede borde og mulighed for både at sidde i de gamle 
+                togvogne samt stationsbygningen. Afslutningsvis kan man tage en aftentur i de smukke omkringliggende omgivelser.
+                <br> <br>
+            </p>
+            <h2 class="blaa_tekst">Vi tilbyder:</h2>
+            <p class="centreret_text">
+                3 retters middag inkl. et glas champagne <br>
+                Snitte med laks, asparges og dilddressing <br>
+                Wienerschnitzel af kalveinderlår hertil serveres brasekartofler, ærter, brun sauce og ”dreng” <br>
+                Chokoladekage med blødende hjerte og Kastbergs vaniljeis <br>
+                268,-
+                <br><br>
+                Nødvendigt at bestille bord
+            </p>
+            <!-- knap-->
+            <div class="knap">
+                <p>Reservér bord</p>
+            </div>
+        </div>
+        <div>
+            <img src="img/candlelit.svg" alt="" class="begivenhed_img">
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
