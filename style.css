@@ -249,6 +249,10 @@ https://css-generators.com/custom-corners/
     align-items: center;
     padding: 96px;
     gap: 96px;
+    animation: fadeIn 0.5s;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 900px;
 }
 
 .linje {
@@ -273,6 +277,10 @@ https://css-generators.com/custom-corners/
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 0.5s;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 500px;
 }
 
 /* Kalender sektion på forsiden */
@@ -284,6 +292,10 @@ https://css-generators.com/custom-corners/
     background-image: url(img/kalenderen.svg);
     height: 750px;
     padding: 96px;
+    animation: fadeIn 0.5s;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 900px;
 }
 
 .kalender_wrapper_content {
@@ -304,6 +316,10 @@ https://css-generators.com/custom-corners/
 .guestbook {
     margin-top: 96px;
     margin-bottom: 96px;
+    animation: fadeIn 0.5s;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 900px;
 }
 
 .guestbook div {
@@ -404,6 +420,13 @@ https://css-generators.com/custom-corners/
     text-align: center;
 }
 
+.menu_ret {
+    animation: fadeIn 0.5s;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 400px;
+}
+
 
 .menulinje_stor {
     width: 42%;
@@ -444,6 +467,10 @@ https://css-generators.com/custom-corners/
     justify-content: center;
     padding: 96px;
     gap: 96px;
+    animation: fadeIn 0.5s;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 900px;
 }
 
 .begivenhed_linje {
@@ -458,10 +485,15 @@ https://css-generators.com/custom-corners/
 .historien_img {
     display: flex;
     justify-content: center;
+    animation: fadeIn 0.5s;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 900px;
 }
 
 .historien_img img {
     width: 86%;
+    
 }
 
 .tidslinje {
@@ -502,16 +534,108 @@ https://css-generators.com/custom-corners/
     margin-top: 40px;
     margin-bottom: 24px;
     gap: 64px;
+   
 }
+
+
+/* ----------------------------------- SELSKABER ----------------------------------- */
+.selskab_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 64px;
+    animation: fadeIn 0.5s linear;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 500px;
+}
+
+.selskab_wrapper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 32px;
+    animation: fadeIn 0.5s;
+    animation-timeline: view();
+    animation-range-start: 1px;
+    animation-range-end: 500px;
+}
+
+.selskab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px; /* Sørger for, at hver .selskab container ikke er for bred */
+}
+
+.selskab img {
+    max-width: 100%; /* Sørger for, at billedet ikke overstiger containerens bredde */
+    display: block;
+}
+
+.selskab_tekst {
+    background-image: url('img/selskaber_baggrund.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 375px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box; /* Sørger for, at padding inkluderes i bredden */
+}
+
+.knap_placering {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 32px;
+}
+
+.knap_selskab {
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #EDE8DA;
+    color: #172E4D;
+    --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+.knap_selskab:hover {
+    background-color: #172E4D;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------------- ANIMATIONER ----------------------------------- */
-.hidden {
-    opacity: 0;
-    transition: all 1s;
-}
-.show {
-    opacity: 1;
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        scale: 0.95;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 
