@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/vradslogo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-ida.css"> <!-- HUSK AT FJERNE IGEN -->
     <link rel="stylesheet" href="reset.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <meta name="description" content="Historien bag Restaurant Vrads Station med en tidslinje over historikken">
-    <title>Historien bag</title>
+    <title>Document</title>
 </head>
 <body>
 <header>
@@ -29,7 +27,7 @@
             </ul>
             
             <ul>
-                <li><a href="index.html"><img src="img/vradslogo.svg" alt="Restaurant Vrads Stations logo" class="logo"></a></li>
+                <li><a href="index.html"><img src="img/vradslogo.svg" alt="" class="logo"></a></li>
                 <li class="hideOnMobile"><a href="fejlside.html" class="qua-bold">Reservér bord</a></li>
                 <li class="hideOnMobile"><a href="frokostmenu.html">Menu</a></li>
                 <li class="hideOnMobile"><a href="begivenheder.html">Begivenheder</a></li>
@@ -49,7 +47,7 @@
         </div>
 
          <!-- Tidslinje -->
-        <img src="img/linje.svg" alt="En linje" class="tidslinje">
+        <img src="img/linje.svg" alt="" class="tidslinje">
         <div class="circle"></div>
 
         <div class="tidslinje_tal">
@@ -60,7 +58,7 @@
         <!-- Årstal 1929 -->
         <section>
             <div class="historien_img">
-                <img src="img/1929.webp" alt="Billede af facaden på Restaurant Vrads Station">
+                <img src="img/1929.webp" alt="">
             </div>
             <div class="spalter">
                 <div>
@@ -79,7 +77,7 @@
         <!-- Årstal 1955 -->
         <section>
             <div class="historien_img">
-                <img src="img/1955.webp" alt="Billede af et af veteranvogne">
+                <img src="img/1955.webp" alt="">
             </div>
             <div class="spalter">
                 <div>
@@ -99,7 +97,7 @@
         <!-- Årstal 1981 -->
         <section>
             <div class="historien_img">
-                <img src="img/1981.webp" alt="Billede indefra Restaurant Vrads Stations interiør">
+                <img src="img/1981.webp" alt="">
             </div>
             <div class="spalter">
                 <div>
@@ -119,7 +117,7 @@
         <!-- Årstal 2024 -->
         <section>
             <div class="historien_img">
-                <img src="img/2024.webp" alt="Billede af hoveddøren ind til Restaurant Vrads Station, hvorpå der står 'Ventesal'.">
+                <img src="img/2024.webp" alt="">
             </div>
             <div class="spalter">
                 <div>
@@ -181,6 +179,18 @@
 
 
 <script>
+     window.addEventListener('scroll', () => {
+                const circle = document.querySelector('.circle');
+                const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPosition = window.scrollY;
+                const maxPosition = window.innerWidth - circle.offsetWidth;
+    
+                const scrollPercentage = scrollPosition / maxScroll;
+                const circlePosition = maxPosition * scrollPercentage;
+    
+                circle.style.left = `${circlePosition}px`;
+            });
+
 
     // Tilføjer en 'scroll' event listener til window
     window.addEventListener('scroll', () => {
