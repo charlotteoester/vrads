@@ -8,9 +8,7 @@ function hideSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
 }
-// For at kode navigationsbaren, er denne video benyttet som hjælp
-https://www.youtube.com/watch?v=U8smiWQ8Seg
-//
+
 
 
 /* Billedkarrusel */
@@ -46,8 +44,6 @@ carousel.addEventListener("mousedown", dragStart); // Når musen trykkes ned, st
 carousel.addEventListener("mousemove", dragging); // Når musen bevæges, udfør dragging
 carousel.addEventListener("mouseup", dragStop); // Når musen slippes, stop drag
 
-// Kilde: denne kode er lavet ved hjælp af følgende video
-// https://www.youtube.com/watch?v=7HPsdVQhpRw&list=PLpwngcHZlPae68z_mLFNfbJFIJVJ_Zcx2&index=6
 
 
 
@@ -71,7 +67,6 @@ function handleButtonClick(btn) {
     // Den knap, som klikkes på, får tilføjet "active" class
     btn.classList.add('active');
     btn.style.backgroundColor = "#172E4D"; // Når en knap er aktiv, dvs. har fået class "active", skal baggrundsfarven ændres fra gennemsigtig til en mørk rød
-    
 }
 
 // Vi tilføjer en eventlistener til hver knap i puls_buttons, som starter funktionen "handleButtonClick"
@@ -109,3 +104,7 @@ window.addEventListener('scroll', () => {
 
 
 
+
+
+
+//Animationer

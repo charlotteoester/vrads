@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-ida.css"> <!-- HUSK AT FJERNE IGEN -->
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Navigationsbaren-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" class="qua-bold">Reservér bord</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Begivenheder</a></li>
+            <li><a href="#">Historien bag</a></li>
+            <li><a href="#">Veterantoget</a></li>
+            <li><a href="#">Selskaber</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#" class="change_language">English</a></li> 
+        </ul>
+        
+        <ul>
+            <li><a href="#"><img src="img/vradslogo.svg" alt="" class="logo"></a></li>
+            <li class="hideOnMobile"><a href="#" class="qua-bold">Reservér bord</a></li>
+            <li class="hideOnMobile"><a href="#">Menu</a></li>
+            <li class="hideOnMobile"><a href="#">Begivenheder</a></li>
+            <li class="hideOnMobile"><a href="#">Historien bag</a></li>
+            <li class="hideOnMobile"><a href="#">Veterantoget</a></li>
+            <li class="hideOnMobile"><a href="#">Selskaber</a></li>
+            <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+            <li class="hideOnMobile"><a href="#" class="change_language">English</a></li> 
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+      <!--Billedkarrusel-->
+
+<section class="wrapperwrapper">
+    <div class="menu_wrapper">
+        <div class="menu_carousel">
+            <img src="img/menubillede1.svg" alt="">
+            <img src="img/menubillede2.svg" alt="">
+            <img src="img/menubillede3.svg" alt="">
+            <img src="img/menubillede4.svg" alt="">
+            <img src="img/menubillede5.svg" alt="">
+            <img src="img/menubillede6.svg" alt="">
+            <img src="img/menubillede7.svg" alt="">
+            <img src="img/menubillede8.svg" alt="">
+        </div>
+    </div>
+</section>
+
+  <!--Knapper med de forskellige menuer-->
+
+<section class="menu_knapper">
+    <div class="knap">
+        <a href=""><p>Frokostmenu</p></a>
+    </div>
+    <div class="knap">
+        <a href=""><p>Aftenmenu</p></a>
+    </div>
+    <div class="knap">
+        <a href=""><p>Kaffe & kage</p></a>
+    </div>
+    <div class="knap">
+        <a href=""><p>Drikkevarer</p></a>
+    </div>
+    <div class="knap">
+        <a href=""><p>Ud af huset</p></a>
+    </div>
+</section>
+
+  <!--Selve menuen - overskrift-->
+
+<section class="menukort_layout">
+    <div>
+    <h1 class="blaa_tekst">DRIKKEVARER</h1>
+    <img src="img/linje.svg" alt="" class="menulinje_stor">
+    </div>
+  <!--Hver enkelt ret-->
+    <div class="blaa_tekst">
+        <div class="menu_ret">
+            <h2 class="menu_bold">Sodavand</h2> <br>
+            <p>Pepsi, Pepsi Max, Faxe Kondi free, Faxe Appelsin, Egekilde citrus</p>
+            <br>
+            <h2>30,-/45,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">Naturfrisk sodavand/juice</h2> <br>
+            <p>Hyldebrus, rabarberbrud, æble, solbær, rabarber</p>
+            <br>
+            <h2>35,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">Kildevand</h2> <br>
+            <p>Med el. uden brus</p>
+            <br>
+            <h2>25,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">Øl</h2> <br>
+            <p>"Silkeborg" fra Grauballe Bryghus <br><br>
+                Alm. el. classic
+            </p>
+            <br>
+            <h2>35,-/55,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">Special øl</h2> <br>
+            <p>Se særskilt kort</p>
+            <br>
+            <h2>35,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+    </div>
+</section>
+
+<!--Tilbage til toppen knap-->
+<div class="knap"><a href="#">Tilbage til toppen</a></div>
+
+<!--Footer-->
+<footer class="footer_wrapper2">
+    <div>
+        <p class="blaa_tekst"><span class="crimson-semibold">Kontakt</span>
+        <br><br>
+        <span class="crimson-semibold">Ring til os på:</span> +45 23 30 61 79
+        <br><br>
+        <span class="crimson-ita">Vi har bedst mulighed for at besvare:</span><br>
+        Mandag - fredag: 09.00 - 15.30<br>
+        Lørdag - søndag: 08.30 - 09.30
+        <br>
+        <br>
+        <span class="crimson-semibold">Mail:</span> mail@vradsstation.com<br>
+        <span class="crimson-ita">Vi forsøger at svare mails hurtigst muligt</span>
+        </p>
+    </div>
+
+    <div>
+        <p class="blaa_tekst"><span class="crimson-semibold">Åbningstider</span>
+        <br><br>
+        Torsdag: 17.00 - 20.00
+        <br><br>
+        Fredag: 17.00 - 21.00 (køkkenet lukker kl. 20.00)
+        <br><br>
+        Lørdag: 11.00 - 21.00 (køkkenet lukker kl. 20.00)
+        <br><br>
+        Søndag: 10.00 - 17.00
+        <br><br> 
+        </p>
+    </div>
+
+    <div>
+        <p class="blaa_tekst"><span class="crimson-semibold">Find os</span>
+        <br><br>
+        Lystrupmindevej 15, 8654 Bryrup
+        <br><br><br>
+        <a href="https://www.facebook.com/VradsStation/">Følg os på Facebook</a>
+        <br><br><br>
+        <a href="https://www.findsmiley.dk/1421214">Se vores Smiley-rapport</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

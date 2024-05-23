@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style-ida.css"> <!-- HUSK AT FJERNE IGEN -->
     <link rel="stylesheet" href="reset.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
-    
 </head>
 <body>
     <!--Navigationsbaren-->
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#" class="qua-bold">Reservér bord</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Begivenheder</a></li>
@@ -35,27 +35,31 @@
             <li class="hideOnMobile"><a href="#">Selskaber</a></li>
             <li class="hideOnMobile"><a href="#">Kontakt</a></li>
             <li class="hideOnMobile"><a href="#" class="change_language">English</a></li> 
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
 
     <!--video på forsiden-->
     <div>
-        <video src="video/vradsvideo.mp4" autoplay loop class="video"></video>
+        <video src="video/vradsvideo2.mp4" autoplay muted loop class="video"></video>
     </div>
+
 
     <!--tekst på videoen-->
     <section class="videotext_wrapper">
         <div class="videotext">
-            <h1 class="videotext1">NÆRVÆR & SMAGSOPLEVELSER</h1>
+            <h1 class="videotext1">NÆRVÆR & <br> SMAGSOPLEVELSER</h1>
             <h2 class="videotext2">i unikke omgivelser</h2>
         </div>
+        <a href="#pil_ned"><div class="pil_ned">
+            <i class="fa-solid fa-chevron-down fa-2xl" style="color: #ffffff;"></i>
+        </div></a>
     </section>
 
 
     
     <!--Velkommen sektion på forsiden-->
-    <section class="velkommen_wrapper">
+    <section class="velkommen_wrapper" id="pil_ned">
 
         <div class="tekst_layout">
             <h2 class="blaa_tekst">Velkommen til</h2>
@@ -161,7 +165,7 @@
 
          <!--Footer-->
 
-    <footer class="footer_wrapper">
+    <footer class="footer_wrapper1">
         <div>
             <p class="blaa_tekst"><span class="crimson-semibold">Kontakt</span>
             <br><br>
@@ -196,9 +200,9 @@
             <br><br>
             Lystrupmindevej 15, 8654 Bryrup
             <br><br><br>
-            <a href="https://www.facebook.com/VradsStation/">Følg os på Facebook</a>
+            <a href="https://www.facebook.com/VradsStation/" class="blaa_link">Følg os på Facebook</a>
             <br><br><br>
-            <a href="https://www.findsmiley.dk/1421214">Se vores Smiley-rapport</a>
+            <a href="https://www.findsmiley.dk/1421214" class="blaa_link">Se vores Smiley-rapport</a>
             </p>
         </div>
     </footer>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-ida.css"> <!-- HUSK AT FJERNE IGEN -->
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Navigationsbaren-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" class="qua-bold">Reservér bord</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Begivenheder</a></li>
+            <li><a href="#">Historien bag</a></li>
+            <li><a href="#">Veterantoget</a></li>
+            <li><a href="#">Selskaber</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#" class="change_language">English</a></li> 
+        </ul>
+        
+        <ul>
+            <li><a href="#"><img src="img/vradslogo.svg" alt="" class="logo"></a></li>
+            <li class="hideOnMobile"><a href="#" class="qua-bold">Reservér bord</a></li>
+            <li class="hideOnMobile"><a href="#">Menu</a></li>
+            <li class="hideOnMobile"><a href="#">Begivenheder</a></li>
+            <li class="hideOnMobile"><a href="#">Historien bag</a></li>
+            <li class="hideOnMobile"><a href="#">Veterantoget</a></li>
+            <li class="hideOnMobile"><a href="#">Selskaber</a></li>
+            <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+            <li class="hideOnMobile"><a href="#" class="change_language">English</a></li> 
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+      <!--Billedkarrusel-->
+
+<section class="wrapperwrapper">
+    <div class="menu_wrapper">
+        <div class="menu_carousel">
+            <img src="img/menubillede1.svg" alt="">
+            <img src="img/menubillede2.svg" alt="">
+            <img src="img/menubillede3.svg" alt="">
+            <img src="img/menubillede4.svg" alt="">
+            <img src="img/menubillede5.svg" alt="">
+            <img src="img/menubillede6.svg" alt="">
+            <img src="img/menubillede7.svg" alt="">
+            <img src="img/menubillede8.svg" alt="">
+        </div>
+    </div>
+</section>
+
+  <!--Knapper med de forskellige menuer-->
+
+<section class="menu_knapper">
+    <div class="knap">
+        <a href=""><p>Frokostmenu</p></a>
+    </div>
+    <div class="knap">
+        <a href=""><p>Aftenmenu</p></a>
+    </div>
+    <div class="knap">
+        <a href=""><p>Kaffe & kage</p></a>
+    </div>
+    <div class="knap">
+        <a href=""><p>Drikkevarer</p></a>
+    </div>
+    <div class="knap">
+        <a href=""><p>Ud af huset</p></a>
+    </div>
+</section>
+
+  <!--Selve menuen - overskrift-->
+<section class="menukort_layout">
+    <div>
+    <h1 class="blaa_tekst">FROKOSTMENU</h1>
+    <img src="img/linje.svg" alt="" class="menulinje_stor">
+    </div>
+
+  <!--Hver enkelt ret-->
+  <!--Hovedret-->
+  <h2 class="menu_aften">Forret</h2> <br>
+    <div class="blaa_tekst">
+        <div class="menu_ret">
+            <h2 class="menu_bold">Klassisk rejecocktail</h2>
+            <p>Med asparges, dressing og brød</p>
+            <br>
+            <h2>78,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">2x tarteletter</h2>
+            <p>Med kød fra frilandshøns i asparges</p>
+            <br>
+            <h2>78,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">Hjemmerørt laksesalat</h2>
+            <p>Med varmrøget laks fra Katrinedal, forårsløg, avokado og flødeost <br>
+            Serveres på salatbund med brød
+            </p>
+            <br>
+            <h2>78,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">Snitte med gravad laks</h2>
+            <p>Fra katrinedal med asparges og dilddressing</p>
+            <br>
+            <h2>78,-</h2> <br><br>
+        </div>
+
+        <!--Hovedret-->
+
+        <img src="img/linje.svg" alt="" class="menulinje_stor">
+
+        <h2 class="menu_aften">Hovedret</h2> <br>
+            <!--ny ret-->
+            <div class="menu_ret">
+                <h2 class="menu_bold">3x tarteletter</h2>
+                <p>Med kød fra frilandshøns i asparges</p>
+                <br>
+                <h2>98,-</h2>
+                <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div class="menu_ret">
+            <h2 class="menu_bold">Stationsburger</h2>
+            <p>Vælg imellem: <br><br>
+                Hakkebøf fra Skovgaard anguskvæg <br>
+                Paneret kyllingelårfilet fra Happy Chicken <br>
+                Vegetar svampebøf <br><br>
+                Med salat, tomat, agurk, løgring, ketchup og mayo, hertil pommes frites og aioli
+            </p>
+            <br>
+            <h2>158,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+            <!--ny ret-->
+            <div class="menu_ret">
+                <h2 class="menu_bold">3x Stjerneskud</h2>
+                <p>Med 2 stegte fiskefileter, dressing og rejer og laks fra katrinedal</p>
+                <br>
+                <h2>158,-</h2>
+                <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div class="menu_ret">
+                <h2 class="menu_bold">Bøf af oksefilet 200g</h2>
+                <p>Fra Skovgaard anguskvæg serveret med pommes frites, grønt og sauce bernaise</p>
+                <br>
+                <h2>218,-</h2>
+                <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div class="menu_ret">
+                <h2 class="menu_bold">Wienerschnitzel</h2>
+                <p>Af kalveinderlår fra Skovgaard anguskvæg <br>
+                Hertil serveres brasekartofler, ærter, brun sauce og "dreng"
+                </p>
+                <br>
+                <h2>188,-</h2>
+                <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+            </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">Pariserbøf</h2>
+            <p>Med hakkebøf fra Skovgaard anguskvæg serveret med kapers, rødbede, peberrod, løg og rå æggeblomme (ved siden af) på smørristet brød</p>
+            <br>
+            <h2>158,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">salat</h2>
+            <p>Med varmrøget laks fra Katrinedal, forskelligt grønt, ristede nødder, urtedressing og brød</p>
+            <br>
+            <h2>138,-</h2>
+            <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+        </div>
+        <!--ny ret-->
+        <div class="menu_ret">
+            <h2 class="menu_bold">For de små</h2>
+            <p>Happy chicken nuggets <br>
+                Af velfærdskylling med pommes frites og lidt grønt
+            </p>
+            <br>
+            <h2>98,-</h2> <br><br>
+            <p class="crimson-ita">Børn op til 12 år kan få alle retter i børnestørrelse 98,-</p> <br><br>
+        </div>
+
+        <img src="img/linje.svg" alt="" class="menulinje_stor">
+
+        <!--Dessert-->
+        <h2 class="menu_aften">Dessert</h2> <br>
+            <!--ny ret-->
+            <div class="menu_ret">
+                <h2 class="menu_bold">Panna cotta</h2>
+                <p>Med jordbær</p>
+                <br>
+                <h2>78,-</h2>
+                <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div class="menu_ret">
+                <h2 class="menu_bold">Chokoladekage</h2>
+                <p>Med blødende hjerte og vaniljeis</p>
+                <br>
+                <h2>78,-</h2>
+                <img src="img/menulinje.svg" alt="" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div class="menu_ret">
+                <h2 class="menu_bold">2x pandekager</h2>
+                <p>Med vaniljeis og chokoladesauce</p>
+                <br>
+                <h2>78,-</h2>
+            </div>
+
+    </div>
+</section>
+
+<!--Tilbage til toppen knap-->
+<div class="knap"><a href="#">Tilbage til toppen</a></div>
+
+<!--Footer-->
+<footer class="footer_wrapper2">
+    <div>
+        <p class="blaa_tekst"><span class="crimson-semibold">Kontakt</span>
+        <br><br>
+        <span class="crimson-semibold">Ring til os på:</span> +45 23 30 61 79
+        <br><br>
+        <span class="crimson-ita">Vi har bedst mulighed for at besvare:</span><br>
+        Mandag - fredag: 09.00 - 15.30<br>
+        Lørdag - søndag: 08.30 - 09.30
+        <br>
+        <br>
+        <span class="crimson-semibold">Mail:</span> mail@vradsstation.com<br>
+        <span class="crimson-ita">Vi forsøger at svare mails hurtigst muligt</span>
+        </p>
+    </div>
+
+    <div>
+        <p class="blaa_tekst"><span class="crimson-semibold">Åbningstider</span>
+        <br><br>
+        Torsdag: 17.00 - 20.00
+        <br><br>
+        Fredag: 17.00 - 21.00 (køkkenet lukker kl. 20.00)
+        <br><br>
+        Lørdag: 11.00 - 21.00 (køkkenet lukker kl. 20.00)
+        <br><br>
+        Søndag: 10.00 - 17.00
+        <br><br> 
+        </p>
+    </div>
+
+    <div>
+        <p class="blaa_tekst"><span class="crimson-semibold">Find os</span>
+        <br><br>
+        Lystrupmindevej 15, 8654 Bryrup
+        <br><br><br>
+        <a href="https://www.facebook.com/VradsStation/">Følg os på Facebook</a>
+        <br><br><br>
+        <a href="https://www.findsmiley.dk/1421214">Se vores Smiley-rapport</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

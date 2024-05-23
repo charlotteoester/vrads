@@ -1,3 +1,8 @@
+/* Scroll to top */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Fonts */
 @font-face {
     font-family: crimson-reg;
@@ -95,10 +100,6 @@ p {
     font-family: crimson-reg;
 }
 
-a {
-    color: #172E4D
-}
-
 .centreret_text {
     text-align: center;
     font-family: qua-ita;
@@ -111,9 +112,12 @@ body {
     background-color: #EDE8DA;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*----------------------------------- FORSIDE ----------------------------------- */
 
-/* Navigationsbaren */
 nav {
     background-color: #E4DECD;
 }
@@ -144,7 +148,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
 }
 
@@ -190,7 +194,8 @@ nav li:first-child{
 .videotext_wrapper {
     width: 100%;
     height: 100%;
-    bottom: 0;
+    padding-bottom: 70px;
+    bottom: 0px;
     left: 0;
 }
 
@@ -199,6 +204,14 @@ nav li:first-child{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.pil_ned {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    z-index: 10; /* Tilføj denne linje */
+    position: relative; /* Sørg for at z-index anvendes */
 }
 
 .videotext1{
@@ -231,6 +244,12 @@ nav li:first-child{
             mask: var(--mask);
     margin: 64px auto 0 auto; /* Top margin og auto for at centrere vandret */
 }
+
+.knap a{
+    color: white;
+    padding: 15px;
+}
+
 /*
 Disse knapper er lavet ved hjælp af denne kilde
 https://css-generators.com/custom-corners/
@@ -239,6 +258,7 @@ https://css-generators.com/custom-corners/
 .knap:hover {
     background-color: #172E4D;
 }
+
 
 /* Velkomst sektion + Natur sektion på forsiden */
 
@@ -343,30 +363,6 @@ https://css-generators.com/custom-corners/
     z-index: 999;
 }
 
-
-
-.footer_wrapper {
-    padding: 6% 6% 6% 6%;
-    background-color: #E4DECD;
-    display: flex; /* Bruger flexbox */
-    justify-content: space-between; /* Placerer elementerne med lige mellemrum */
-    flex-direction: row;
-}
-
-.footer_wrapper p {
-    font-family: crimson-reg;
-}
-
-
-
-.tekst_layout {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-}
-
-
 /*----------------------------------- MENUKORT - FROKOSTMENU ----------------------------------- */
 
 /* Billedkarrusel */
@@ -418,6 +414,8 @@ https://css-generators.com/custom-corners/
 .menukort_layout div {
     position: relative;
     text-align: center;
+    margin-left: 104px;
+    margin-right: 104px;
 }
 
 .menu_ret {
@@ -425,6 +423,10 @@ https://css-generators.com/custom-corners/
     animation-timeline: view();
     animation-range-start: 1px;
     animation-range-end: 400px;
+}
+
+.menu_ret p {
+    font-family: crimson-reg;
 }
 
 
@@ -444,6 +446,15 @@ https://css-generators.com/custom-corners/
 
 .menu_bold {
     font-family: crimson-bold;
+}
+
+/*----------------------------------- MENUKORT - AFTENMENU ----------------------------------- */
+
+.menu_aften {
+    font-family: crimson-bold;
+    font-size: 2rem;
+    text-align: center;
+    color: #172E4D;
 }
 
 /* ----------------------------------- BEGIVENHEDER ----------------------------------- */
@@ -503,6 +514,7 @@ https://css-generators.com/custom-corners/
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    z-index: 999;
 }
 
 .circle {
@@ -612,7 +624,46 @@ https://css-generators.com/custom-corners/
     color: white;
 }
 
+/* ----------------------------------- Footer ----------------------------------- */
+.footer_wrapper1 {
+    padding: 6% 6% 6% 6%;
+    background-color: #E4DECD;
+    display: flex; /* Bruger flexbox */
+    justify-content: space-between; /* Placerer elementerne med lige mellemrum */
+    flex-direction: row;
+}
 
+.footer_wrapper2 {
+    padding: 6% 6% 6% 6%;
+    background-color: #E4DECD;
+    display: flex; /* Bruger flexbox */
+    justify-content: space-between; /* Placerer elementerne med lige mellemrum */
+    flex-direction: row;
+    margin-top: 96px;
+}
+
+.footer_wrapper1 p {
+    font-family: crimson-reg;
+}
+
+.footer_wrapper2 p {
+    font-family: crimson-reg;
+}
+
+.tekst_layout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer_wrapper1 div p a {
+    color: #172E4D
+}
+
+.footer_wrapper2 div p a {
+    color: #172E4D
+}
 
 
 
