@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+<header>
         <!-- Navigationsbaren -->
         <nav>
             <ul class="sidebar">
@@ -38,6 +39,7 @@
                 <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
+</header>
 
         <!-- Overskrift -->
         <div class="centreret_overskrift">
@@ -56,7 +58,7 @@
         <!-- Årstal 1929 -->
         <section>
             <div class="historien_img">
-                <img src="img/1929.svg" alt="">
+                <img src="img/1929.webp" alt="">
             </div>
             <div class="spalter">
                 <div>
@@ -75,7 +77,7 @@
         <!-- Årstal 1955 -->
         <section>
             <div class="historien_img">
-                <img src="img/1955.svg" alt="">
+                <img src="img/1955.webp" alt="">
             </div>
             <div class="spalter">
                 <div>
@@ -95,7 +97,7 @@
         <!-- Årstal 1981 -->
         <section>
             <div class="historien_img">
-                <img src="img/1981.svg" alt="">
+                <img src="img/1981.webp" alt="">
             </div>
             <div class="spalter">
                 <div>
@@ -115,7 +117,7 @@
         <!-- Årstal 2024 -->
         <section>
             <div class="historien_img">
-                <img src="img/2024.svg" alt="">
+                <img src="img/2024.webp" alt="">
             </div>
             <div class="spalter">
                 <div>
@@ -188,7 +190,35 @@
     
                 circle.style.left = `${circlePosition}px`;
             });
+
+
+    // Tilføjer en 'scroll' event listener til window
+    window.addEventListener('scroll', () => {
+    // finder elementet med klassen 'circle'
+    const circle = document.querySelector('.circle');
+    
+    // Beregner den maksimale scroll-højde (total højde af dokumentet minus vinduets højde)
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    
+    // Få den nuværende scroll-position (antal pixel brugeren har scrollet lodret)
+    const scrollPosition = window.scrollY;
+    
+    // Beregn den maksimale vandrette position for cirklen (vinduesbredde minus cirklens bredde)
+    const maxPosition = window.innerWidth - circle.offsetWidth;
+
+    // Beregn scroll-procentdelen (hvor langt ned brugeren har scrollet i forhold til maxScroll)
+    const scrollPercentage = scrollPosition / maxScroll;
+    
+    // Beregn cirklens nye vandrette position baseret på scroll-procentdelen
+    const circlePosition = maxPosition * scrollPercentage;
+
+    // Sæt cirklens venstre stil-egenskab til den beregnede position (i pixel)
+    circle.style.left = `${circlePosition}px`;
+});
+
 </script>
+
+
 
 
 

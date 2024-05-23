@@ -319,9 +319,7 @@ https://css-generators.com/custom-corners/
     animation-range-end: 900px;
 }
 
-.kalender_wrapper img {
-    
-}
+
 
 .kalender_wrapper_content {
     display: flex;
@@ -535,7 +533,7 @@ https://css-generators.com/custom-corners/
     animation: fadeIn 0.5s;
     animation-timeline: view();
     animation-range-start: 1px;
-    animation-range-end: 900px;
+    animation-range-end: 600px;
 }
 
 .historien_img img {
