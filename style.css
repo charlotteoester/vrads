@@ -237,6 +237,7 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: qua-reg;
     background-color: #62758A;
     color: white;
     --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
@@ -247,7 +248,7 @@ nav li:first-child {
 
 .knap a{
     color: white;
-    padding: 15px;
+    padding: 12px;
 }
 
 /*
@@ -318,6 +319,10 @@ https://css-generators.com/custom-corners/
     animation-range-end: 900px;
 }
 
+.kalender_wrapper img {
+    
+}
+
 .kalender_wrapper_content {
     display: flex;
     flex-direction: row;
@@ -326,10 +331,37 @@ https://css-generators.com/custom-corners/
     gap: 96px;
 }
 
-.kalender_wrapper_content .knap {
-    background-color: #E4DECD;
+.knap_hvid {
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: qua-reg;
+    background-color: #EDE8DA;
     color: #172E4D;
+    --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+    margin: 64px auto 0 auto; /* Top margin og auto for at centrere vandret */
 }
+
+.knap_hvid a{
+    color: #172E4D;
+    padding: 12px;
+}
+
+.knap_hvid a:hover{
+    color: #EDE8DA;
+    cursor: pointer;
+}
+
+.knap_hvid:hover {
+    background-color: #172E4D;
+    color: #EDE8DA;
+}
+
 
 /* Gæstebog på forsiden */
 
@@ -361,6 +393,10 @@ https://css-generators.com/custom-corners/
     position: absolute;
     top: 0;
     z-index: 999;
+}
+/*----------------------------------- MENUKORT - ID'ER ----------------------------------- */
+#frokost, #aften, #kaffekage, #drikkevarer {
+    background-color: #172E4D;
 }
 
 /*----------------------------------- MENUKORT - FROKOSTMENU ----------------------------------- */
@@ -535,6 +571,11 @@ https://css-generators.com/custom-corners/
     flex-direction: row;
     justify-content: space-around;
     position: sticky;
+    top: 0; /* Sørg for at fastgøre elementet til toppen af dets container */
+    background-color: #EDE8DA;/* Gør det muligt at se elementet, hvis det overlapper indholdet */
+    z-index: 1; /* Sikrer, at elementet forbliver øverst på skærmen */
+    padding-bottom: 60px;
+    padding-top: 15px;
 }
 
 .spalter {
@@ -619,10 +660,31 @@ https://css-generators.com/custom-corners/
             mask: var(--mask);
 }
 
-.knap_selskab:hover {
+.knap_selskab a{
+    color: #172E4D;
+}
+
+.knap_selskab:hover{
     background-color: #172E4D;
     color: white;
 }
+
+.knap_selskab a:hover {
+    color: white;
+}
+
+
+/* ----------------------------------- 404 side ----------------------------------- */
+.fejlside_wrapper p{
+    text-align: center;
+}
+
+.fejlside_wrapper {
+    margin-top: 15%;
+}
+
+
+
 
 /* ----------------------------------- Footer ----------------------------------- */
 .footer_wrapper1 {

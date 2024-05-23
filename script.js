@@ -81,18 +81,6 @@ puls_buttons.forEach(function(btn) {
 
 
 
-//tidslinje
-window.addEventListener('scroll', () => {
-    const circle = document.querySelector('.circle');
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPosition = window.scrollY;
-    const maxPosition = window.innerWidth - circle.offsetWidth;
-
-    const scrollPercentage = scrollPosition / maxScroll;
-    const circlePosition = maxPosition * scrollPercentage;
-
-    circle.style.left = `${circlePosition}px`;
-});
 
 //kilde: chatGPT har hjulpet med at få cirklen til at bevæge sig horisontalt, når man scroller ned på siden
 
