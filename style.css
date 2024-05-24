@@ -210,18 +210,20 @@ nav li:first-child {
     display: flex;
     justify-content: center;
     margin-top: -70px;
-    z-index: 10; /* Tilføj denne linje */
-    position: relative; /* Sørg for at z-index anvendes */
+    z-index: 10;
+    /* Tilføj denne linje */
+    position: relative;
+    /* Sørg for at z-index anvendes */
 }
 
-.videotext1{
+.videotext1 {
     color: white;
     font-family: crimson-reg;
     font-size: 3rem;
     text-align: center;
 }
 
-.videotext2{
+.videotext2 {
     color: white;
     font-family: crimson-reg;
     font-size: 1.5rem;
@@ -240,13 +242,14 @@ nav li:first-child {
     font-family: qua-reg;
     background-color: #62758A;
     color: white;
-    --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
+    --mask: radial-gradient(12px at 12px 12px, #0000 98%, #000) -12px -12px;
     -webkit-mask: var(--mask);
-            mask: var(--mask);
-    margin: 64px auto 0 auto; /* Top margin og auto for at centrere vandret */
+    mask: var(--mask);
+    margin: 64px auto 0 auto;
+    /* Top margin og auto for at centrere vandret */
 }
 
-.knap a{
+.knap a {
     color: white;
     padding: 12px;
 }
@@ -263,7 +266,8 @@ https://css-generators.com/custom-corners/
 
 /* Velkomst sektion + Natur sektion på forsiden */
 
-.velkommen_wrapper, .natur_wrapper {
+.velkommen_wrapper,
+.natur_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -339,18 +343,19 @@ https://css-generators.com/custom-corners/
     font-family: qua-reg;
     background-color: #EDE8DA;
     color: #172E4D;
-    --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
+    --mask: radial-gradient(12px at 12px 12px, #0000 98%, #000) -12px -12px;
     -webkit-mask: var(--mask);
-            mask: var(--mask);
-    margin: 64px auto 0 auto; /* Top margin og auto for at centrere vandret */
+    mask: var(--mask);
+    margin: 64px auto 0 auto;
+    /* Top margin og auto for at centrere vandret */
 }
 
-.knap_hvid a{
+.knap_hvid a {
     color: #172E4D;
     padding: 12px;
 }
 
-.knap_hvid a:hover{
+.knap_hvid a:hover {
     color: #EDE8DA;
     cursor: pointer;
 }
@@ -392,8 +397,12 @@ https://css-generators.com/custom-corners/
     top: 0;
     z-index: 999;
 }
+
 /*----------------------------------- MENUKORT - ID'ER ----------------------------------- */
-#frokost, #aften, #kaffekage, #drikkevarer {
+#frokost,
+#aften,
+#kaffekage,
+#drikkevarer {
     background-color: #172E4D;
 }
 
@@ -424,7 +433,7 @@ https://css-generators.com/custom-corners/
 .menu_carousel img {
     height: 375px;
     object-fit: cover;
-   padding-right: 30px;
+    padding-right: 30px;
     width: calc(100% / 4);
 }
 
@@ -532,7 +541,7 @@ https://css-generators.com/custom-corners/
 
 .historien_img img {
     width: 86%;
-    
+
 }
 
 .tidslinje {
@@ -547,7 +556,8 @@ https://css-generators.com/custom-corners/
 
 .circle {
     position: sticky;
-    top: 10%; /* Startposition: midt på skærmen */
+    top: 10%;
+    /* Startposition: midt på skærmen */
     margin-left: 27%;
     margin-right: 27%;
     width: 20px;
@@ -555,7 +565,8 @@ https://css-generators.com/custom-corners/
     background-color: #003366;
     border-radius: 50%;
     transform: translateY(-50%);
-    z-index: 999; /* Sørger for at cirklen ligger oven på andre elementer */
+    z-index: 999;
+    /* Sørger for at cirklen ligger oven på andre elementer */
 }
 
 .tidslinje_tal {
@@ -563,9 +574,12 @@ https://css-generators.com/custom-corners/
     flex-direction: row;
     justify-content: space-around;
     position: sticky;
-    top: 0; /* Sørg for at fastgøre elementet til toppen af dets container */
-    background-color: #EDE8DA;/* Gør det muligt at se elementet, hvis det overlapper indholdet */
-    z-index: 1; /* Sikrer, at elementet forbliver øverst på skærmen */
+    top: 0;
+    /* Sørg for at fastgøre elementet til toppen af dets container */
+    background-color: #EDE8DA;
+    /* Gør det muligt at se elementet, hvis det overlapper indholdet */
+    z-index: 1;
+    /* Sikrer, at elementet forbliver øverst på skærmen */
     padding-bottom: 60px;
     padding-top: 15px;
 }
@@ -579,7 +593,7 @@ https://css-generators.com/custom-corners/
     margin-top: 40px;
     margin-bottom: 24px;
     gap: 64px;
-   
+
 }
 
 
@@ -612,11 +626,13 @@ https://css-generators.com/custom-corners/
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 450px; /* Sørger for, at hver .selskab container ikke er for bred */
+    max-width: 450px;
+    /* Sørger for, at hver .selskab container ikke er for bred */
 }
 
 .selskab img {
-    max-width: 100%; /* Sørger for, at billedet ikke overstiger containerens bredde */
+    max-width: 100%;
+    /* Sørger for, at billedet ikke overstiger containerens bredde */
     display: block;
 }
 
@@ -629,7 +645,8 @@ https://css-generators.com/custom-corners/
     height: 375px;
     padding-left: 32px;
     padding-right: 32px;
-    box-sizing: border-box; /* Sørger for, at padding inkluderes i bredden */
+    box-sizing: border-box;
+    /* Sørger for, at padding inkluderes i bredden */
 }
 
 .knap_placering {
@@ -647,16 +664,16 @@ https://css-generators.com/custom-corners/
     text-align: center;
     background-color: #EDE8DA;
     color: #172E4D;
-    --mask: radial-gradient(12px at 12px 12px,#0000 98%,#000) -12px -12px;
+    --mask: radial-gradient(12px at 12px 12px, #0000 98%, #000) -12px -12px;
     -webkit-mask: var(--mask);
-            mask: var(--mask);
+    mask: var(--mask);
 }
 
-.knap_selskab a{
+.knap_selskab a {
     color: #172E4D;
 }
 
-.knap_selskab:hover{
+.knap_selskab:hover {
     background-color: #172E4D;
     color: white;
 }
@@ -667,7 +684,7 @@ https://css-generators.com/custom-corners/
 
 
 /* ----------------------------------- 404 side ----------------------------------- */
-.fejlside_wrapper p{
+.fejlside_wrapper p {
     text-align: center;
 }
 
@@ -682,16 +699,20 @@ https://css-generators.com/custom-corners/
 .footer_wrapper1 {
     padding: 6% 6% 6% 6%;
     background-color: #E4DECD;
-    display: flex; /* Bruger flexbox */
-    justify-content: space-between; /* Placerer elementerne med lige mellemrum */
+    display: flex;
+    /* Bruger flexbox */
+    justify-content: space-between;
+    /* Placerer elementerne med lige mellemrum */
     flex-direction: row;
 }
 
 .footer_wrapper2 {
     padding: 6% 6% 6% 6%;
     background-color: #E4DECD;
-    display: flex; /* Bruger flexbox */
-    justify-content: space-between; /* Placerer elementerne med lige mellemrum */
+    display: flex;
+    /* Bruger flexbox */
+    justify-content: space-between;
+    /* Placerer elementerne med lige mellemrum */
     flex-direction: row;
     margin-top: 96px;
 }
@@ -763,16 +784,17 @@ https://css-generators.com/custom-corners/
 /* ----------------------------------- MEDIA QUERIES ----------------------------------- */
 /*  Navigationsbaren */
 @media(max-width: 800px) {
-    .hideOnMobile{
+    .hideOnMobile {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
     }
 }
 
 @media(max-width: 400px) {
-    .sidebar{
+    .sidebar {
         width: 100%;
     }
 }

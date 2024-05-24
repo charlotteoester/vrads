@@ -1,10 +1,10 @@
 /* -------------------------- Funktion til navigationsbaren -------------------------- */
-function showSidebar(){
+function showSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'flex' //ændrer synligheden til synlig
 }
 
-function hideSidebar(){
+function hideSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none' //ændrer synligheden til skjult
 }
@@ -30,7 +30,7 @@ const dragStart = (e) => {
 
 // Funktion til drag-bevægelsen
 const dragging = (e) => {
-    if(!isDragStart) return; // Hvis drag ikke er startet, gør intet
+    if (!isDragStart) return; // Hvis drag ikke er startet, gør intet
     e.preventDefault(); // Forhindrer standard handlinger (som at markere tekst)
     let positionDiff = e.pageX - prevPageX; // Beregn forskellen i X-positionen siden drag startede
     carousel.scrollLeft = prevScrollLeft - positionDiff; // Opdater scroll positionen af carousel

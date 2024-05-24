@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,201 +13,222 @@
     <meta name="description" content="Frokostmenuen">
     <title>Frokostmenuen</title>
 </head>
+
 <body>
-<header>
-    <!--Navigationsbaren-->
-    <nav>
-        <ul class="sidebar">
-            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="fejlside.html" class="qua-bold">Reservér bord</a></li>
-            <li><a href="frokostmenu.html">Menu</a></li>
-            <li><a href="begivenheder.html">Begivenheder</a></li>
-            <li><a href="historien.html">Historien bag</a></li>
-            <li><a href="fejlside.html">Veterantoget</a></li>
-            <li><a href="selskaber.html">Selskaber</a></li>
-            <li><a href="fejlside.html">Kontakt</a></li>
-            <li><a href="#" class="change_language">English</a></li> 
-        </ul>
-        
-        <ul>
-            <li><a href="index.html"><img src="img/vradslogo.svg" alt="Restaurant Vrads Stations logo" class="logo"></a></li>
-            <li class="hideOnMobile"><a href="fejlside.html" class="qua-bold">Reservér bord</a></li>
-            <li class="hideOnMobile"><a href="frokostmenu.html">Menu</a></li>
-            <li class="hideOnMobile"><a href="begivenheder.html">Begivenheder</a></li>
-            <li class="hideOnMobile"><a href="historien.html">Historien bag</a></li>
-            <li class="hideOnMobile"><a href="fejlside.html">Veterantoget</a></li>
-            <li class="hideOnMobile"><a href="selskaber.html">Selskaber</a></li>
-            <li class="hideOnMobile"><a href="fejlside.html">Kontakt</a></li>
-            <li class="hideOnMobile"><a href="#" class="change_language">English</a></li> 
-            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <!--Navigationsbaren-->
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#172E4D">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="fejlside.html" class="qua-bold">Reservér bord</a></li>
+                <li><a href="frokostmenu.html">Menu</a></li>
+                <li><a href="begivenheder.html">Begivenheder</a></li>
+                <li><a href="historien.html">Historien bag</a></li>
+                <li><a href="fejlside.html">Veterantoget</a></li>
+                <li><a href="selskaber.html">Selskaber</a></li>
+                <li><a href="fejlside.html">Kontakt</a></li>
+                <li><a href="#" class="change_language">English</a></li>
+            </ul>
 
-      <!--Billedkarrusel-->
+            <ul>
+                <li><a href="index.html"><img src="img/vradslogo.svg" alt="Restaurant Vrads Stations logo"
+                            class="logo"></a></li>
+                <li class="hideOnMobile"><a href="fejlside.html" class="qua-bold">Reservér bord</a></li>
+                <li class="hideOnMobile"><a href="frokostmenu.html">Menu</a></li>
+                <li class="hideOnMobile"><a href="begivenheder.html">Begivenheder</a></li>
+                <li class="hideOnMobile"><a href="historien.html">Historien bag</a></li>
+                <li class="hideOnMobile"><a href="fejlside.html">Veterantoget</a></li>
+                <li class="hideOnMobile"><a href="selskaber.html">Selskaber</a></li>
+                <li class="hideOnMobile"><a href="fejlside.html">Kontakt</a></li>
+                <li class="hideOnMobile"><a href="#" class="change_language">English</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26px" viewBox="0 -960 960 960" width="26px" fill="#172E4D">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="wrapperwrapper">
-    <div class="menu_wrapper">
-        <div class="menu_carousel">
-            <img src="img/menubillede1.webp" alt="Stationsburger">
-            <img src="img/menubillede2.webp" alt="Desserter">
-            <img src="img/menubillede3.webp" alt="Salat med laks fra Katrinedal">
-            <img src="img/menubillede4.webp" alt="Wienerschnitzel">
-            <img src="img/menubillede5.webp" alt="Pandekager med vaniljeis">
-            <img src="img/menubillede6.webp" alt="Panna cotta med jordbær">
-            <img src="img/menubillede7.webp" alt="Aftenmenu">
-            <img src="img/menubillede8.webp" alt="3x tarteletter">
-        </div>
-    </div>
-</section>
+    <!--Billedkarrusel-->
 
-  <!--Knapper med de forskellige menuer-->
+    <section class="wrapperwrapper">
+        <div class="menu_wrapper">
+            <div class="menu_carousel">
+                <img src="img/menubillede1.webp" alt="Stationsburger">
+                <img src="img/menubillede2.webp" alt="Desserter">
+                <img src="img/menubillede3.webp" alt="Salat med laks fra Katrinedal">
+                <img src="img/menubillede4.webp" alt="Wienerschnitzel">
+                <img src="img/menubillede5.webp" alt="Pandekager med vaniljeis">
+                <img src="img/menubillede6.webp" alt="Panna cotta med jordbær">
+                <img src="img/menubillede7.webp" alt="Aftenmenu">
+                <img src="img/menubillede8.webp" alt="3x tarteletter">
+            </div>
+        </div>
+    </section>
 
-<section class="menu_knapper">
-    <div class="knap" id="frokost">
-        <a href="frokostmenu.html"><p>Frokostmenu</p></a>
-    </div>
-    <div class="knap">
-        <a href="aftenmenu.html"><p>Aftenmenu</p></a>
-    </div>
-    <div class="knap">
-        <a href="kaffekage.html"><p>Kaffe & kage</p></a>
-    </div>
-    <div class="knap">
-        <a href="drikkevarer.html"><p>Drikkevarer</p></a>
-    </div>
-    <div class="knap">
-        <a href="fejlside.html"><p>Ud af huset</p></a>
-    </div>
-</section>
+    <!--Knapper med de forskellige menuer-->
 
-  <!--Selve menuen - overskrift-->
+    <section class="menu_knapper">
+        <div class="knap" id="frokost">
+            <a href="frokostmenu.html">
+                <p>Frokostmenu</p>
+            </a>
+        </div>
+        <div class="knap">
+            <a href="aftenmenu.html">
+                <p>Aftenmenu</p>
+            </a>
+        </div>
+        <div class="knap">
+            <a href="kaffekage.html">
+                <p>Kaffe & kage</p>
+            </a>
+        </div>
+        <div class="knap">
+            <a href="drikkevarer.html">
+                <p>Drikkevarer</p>
+            </a>
+        </div>
+        <div class="knap">
+            <a href="fejlside.html">
+                <p>Ud af huset</p>
+            </a>
+        </div>
+    </section>
 
-<section class="menukort_layout">
-    <div>
-    <h1 class="blaa_tekst">FROKOSTMENU</h1>
-    <img src="img/linje.svg" alt="En linje" class="menulinje_stor">
-    </div>
-  <!--Hver enkelt ret-->
-    <div class="blaa_tekst">
+    <!--Selve menuen - overskrift-->
+
+    <section class="menukort_layout">
         <div>
-            <h2 class="menu_bold">3x tarteletter</h2>
-            <p>Med kød fra frilandshøns i asparges</p>
-            <br>
-            <h2>98,-</h2>
-            <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            <h1 class="blaa_tekst">FROKOSTMENU</h1>
+            <img src="img/linje.svg" alt="En linje" class="menulinje_stor">
         </div>
-        <!--ny ret-->
-        <div>
-            <h2 class="menu_bold">3x Stjerneskud</h2>
-            <p>Med 2 stegte fiskefileter, dressing og rejer og laks fra katrinedal</p>
-            <br>
-            <h2>158,-</h2>
-            <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+        <!--Hver enkelt ret-->
+        <div class="blaa_tekst">
+            <div>
+                <h2 class="menu_bold">3x tarteletter</h2>
+                <p>Med kød fra frilandshøns i asparges</p>
+                <br>
+                <h2>98,-</h2>
+                <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div>
+                <h2 class="menu_bold">3x Stjerneskud</h2>
+                <p>Med 2 stegte fiskefileter, dressing og rejer og laks fra katrinedal</p>
+                <br>
+                <h2>158,-</h2>
+                <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div>
+                <h2 class="menu_bold">Herregårdsbøf</h2>
+                <p>Hakkebøf fra Skovgaard anguskvæg serveret med pommes frites, ærter, og sauce bernaise</p>
+                <br>
+                <h2>158,-</h2>
+                <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div>
+                <h2 class="menu_bold">Bøf af oksefilet 200g</h2>
+                <p>Fra Skovgaard anguskvæg serveret med pommes frites, grønt og sauce bernaise</p>
+                <br>
+                <h2>218,-</h2>
+                <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div>
+                <h2 class="menu_bold">Pariserbøf</h2>
+                <p>Med hakkebøf fra Skovgaard anguskvæg serveret med kapers, rødbede, peberrod, løg og rå æggeblomme
+                    (ved siden af) på smørristet brød</p>
+                <br>
+                <h2>158,-</h2>
+                <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div>
+                <h2 class="menu_bold">Stationsburger</h2>
+                <p>Vælg imellem: <br><br>
+                    Hakkebøf fra Skovgaard anguskvæg <br>
+                    Paneret kyllingelårfilet fra Happy Chicken <br>
+                    Vegetar svampebøf <br><br>
+                    Med salat, tomat, agurk, løgring, ketchup og mayo, hertil pommes frites og aioli
+                </p>
+                <br>
+                <h2>158,-</h2>
+                <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div>
+                <h2 class="menu_bold">salat</h2>
+                <p>Med varmrøget laks fra Katrinedal, forskelligt grønt, ristede nødder, urtedressing og brød</p>
+                <br>
+                <h2>138,-</h2>
+                <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            </div>
+            <!--ny ret-->
+            <div>
+                <h2 class="menu_bold">For de små</h2>
+                <p>Happy chicken nuggets <br>
+                    Af velfærdskylling med pommes frites og lidt grønt
+                </p>
+                <br>
+                <h2>98,-</h2>
+                <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
+            </div>
         </div>
-        <!--ny ret-->
+    </section>
+
+    <!--Tilbage til toppen knap-->
+    <div class="knap"><a href="#">Tilbage til toppen</a></div>
+
+    <!--Footer-->
+    <footer class="footer_wrapper2">
         <div>
-            <h2 class="menu_bold">Herregårdsbøf</h2>
-            <p>Hakkebøf fra Skovgaard anguskvæg serveret med pommes frites, ærter, og sauce bernaise</p>
-            <br>
-            <h2>158,-</h2>
-            <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
-        </div>
-        <!--ny ret-->
-        <div>
-            <h2 class="menu_bold">Bøf af oksefilet 200g</h2>
-            <p>Fra Skovgaard anguskvæg serveret med pommes frites, grønt og sauce bernaise</p>
-            <br>
-            <h2>218,-</h2>
-            <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
-        </div>
-        <!--ny ret-->
-        <div>
-            <h2 class="menu_bold">Pariserbøf</h2>
-            <p>Med hakkebøf fra Skovgaard anguskvæg serveret med kapers, rødbede, peberrod, løg og rå æggeblomme (ved siden af) på smørristet brød</p>
-            <br>
-            <h2>158,-</h2>
-            <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
-        </div>
-        <!--ny ret-->
-        <div>
-            <h2 class="menu_bold">Stationsburger</h2>
-            <p>Vælg imellem: <br><br>
-                Hakkebøf fra Skovgaard anguskvæg <br>
-                Paneret kyllingelårfilet fra Happy Chicken <br>
-                Vegetar svampebøf <br><br>
-                Med salat, tomat, agurk, løgring, ketchup og mayo, hertil pommes frites og aioli
+            <p class="blaa_tekst"><span class="crimson-semibold">Kontakt</span>
+                <br><br>
+                <span class="crimson-semibold">Ring til os på:</span> +45 23 30 61 79
+                <br><br>
+                <span class="crimson-ita">Vi har bedst mulighed for at besvare:</span><br>
+                Mandag - fredag: 09.00 - 15.30<br>
+                Lørdag - søndag: 08.30 - 09.30
+                <br>
+                <br>
+                <span class="crimson-semibold">Mail:</span> mail@vradsstation.com<br>
+                <span class="crimson-ita">Vi forsøger at svare mails hurtigst muligt</span>
             </p>
-            <br>
-            <h2>158,-</h2>
-            <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
         </div>
-        <!--ny ret-->
+
         <div>
-            <h2 class="menu_bold">salat</h2>
-            <p>Med varmrøget laks fra Katrinedal, forskelligt grønt, ristede nødder, urtedressing og brød</p>
-            <br>
-            <h2>138,-</h2>
-            <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
-        </div>
-        <!--ny ret-->
-        <div>
-            <h2 class="menu_bold">For de små</h2>
-            <p>Happy chicken nuggets <br>
-                Af velfærdskylling med pommes frites og lidt grønt
+            <p class="blaa_tekst"><span class="crimson-semibold">Åbningstider</span>
+                <br><br>
+                Torsdag: 17.00 - 20.00
+                <br><br>
+                Fredag: 17.00 - 21.00 (køkkenet lukker kl. 20.00)
+                <br><br>
+                Lørdag: 11.00 - 21.00 (køkkenet lukker kl. 20.00)
+                <br><br>
+                Søndag: 10.00 - 17.00
+                <br><br>
             </p>
-            <br>
-            <h2>98,-</h2>
-            <img src="img/menulinje.svg" alt="En menu linje" class="menulinje_lille">
         </div>
-    </div>
-</section>
 
-<!--Tilbage til toppen knap-->
-<div class="knap"><a href="#">Tilbage til toppen</a></div>
-
-<!--Footer-->
-<footer class="footer_wrapper2">
-    <div>
-        <p class="blaa_tekst"><span class="crimson-semibold">Kontakt</span>
-        <br><br>
-        <span class="crimson-semibold">Ring til os på:</span> +45 23 30 61 79
-        <br><br>
-        <span class="crimson-ita">Vi har bedst mulighed for at besvare:</span><br>
-        Mandag - fredag: 09.00 - 15.30<br>
-        Lørdag - søndag: 08.30 - 09.30
-        <br>
-        <br>
-        <span class="crimson-semibold">Mail:</span> mail@vradsstation.com<br>
-        <span class="crimson-ita">Vi forsøger at svare mails hurtigst muligt</span>
-        </p>
-    </div>
-
-    <div>
-        <p class="blaa_tekst"><span class="crimson-semibold">Åbningstider</span>
-        <br><br>
-        Torsdag: 17.00 - 20.00
-        <br><br>
-        Fredag: 17.00 - 21.00 (køkkenet lukker kl. 20.00)
-        <br><br>
-        Lørdag: 11.00 - 21.00 (køkkenet lukker kl. 20.00)
-        <br><br>
-        Søndag: 10.00 - 17.00
-        <br><br> 
-        </p>
-    </div>
-
-    <div>
-        <p class="blaa_tekst"><span class="crimson-semibold">Find os</span>
-        <br><br>
-        Lystrupmindevej 15, 8654 Bryrup
-        <br><br><br>
-        <a href="https://www.facebook.com/VradsStation/">Følg os på Facebook</a>
-        <br><br><br>
-        <a href="https://www.findsmiley.dk/1421214">Se vores Smiley-rapport</a>
-        </p>
-    </div>
-</footer>
+        <div>
+            <p class="blaa_tekst"><span class="crimson-semibold">Find os</span>
+                <br><br>
+                Lystrupmindevej 15, 8654 Bryrup
+                <br><br><br>
+                <a href="https://www.facebook.com/VradsStation/">Følg os på Facebook</a>
+                <br><br><br>
+                <a href="https://www.findsmiley.dk/1421214">Se vores Smiley-rapport</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
