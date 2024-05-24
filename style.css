@@ -117,7 +117,7 @@ a {
 }
 
 /*----------------------------------- FORSIDE ----------------------------------- */
-
+/* Navigationsbaren */
 nav {
     background-color: #E4DECD;
 }
@@ -448,16 +448,10 @@ https://css-generators.com/custom-corners/
 .menukort_layout div {
     position: relative;
     text-align: center;
-    margin-left: 104px;
-    margin-right: 104px;
+    margin-left: 136px;
+    margin-right: 136px;
 }
 
-.menu_ret {
-    animation: fadeIn 0.5s;
-    animation-timeline: view();
-    animation-range-start: 1px;
-    animation-range-end: 400px;
-}
 
 .menu_ret p {
     font-family: crimson-reg;
